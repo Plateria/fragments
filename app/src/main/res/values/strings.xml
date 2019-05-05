@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FragmentsAndNestedFragments</string>
+    <string name="msg_zero">0</string>
+    <string name="title_one_fragment">Single Fragment</string>
+    <string name="msg_outer_fragment">Outer Fragment</string>
+    <string name="msg_inner_fragment">Inner Fragment</string>
+    <string name="title_menu_hello">Hello World</string>
+    <string name="title_menu_single">Single Fragment</string>
+    <string name="title_menu_nested">Nested Fragment</string>
+    <string name="title_add">Add</string>
+</resources>
