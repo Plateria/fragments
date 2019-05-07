@@ -37,11 +37,11 @@ public class OuterFragment extends Fragment implements ButtonCallback {
                 .beginTransaction()
                 .add(R.id.container, innerFragment)
                 .commit();
+        textCounter = view.findViewById(R.id.text_counter);
+        textCounter.setText(String.valueOf(counter));
     }
     
-            textCounter = view.findViewById(R.id.text_counter);
-        textCounter.setText(String.valueOf(counter));
-
+          
     @Override
     public void hitCounter() {
         textCounter.setText(String.valueOf(++counter));
