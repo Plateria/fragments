@@ -27,7 +27,9 @@ public class OuterFragment extends Fragment implements ButtonCallback {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, 
+                              @Nullable Bundle savedInstanceState) {
+        
         super.onViewCreated(view, savedInstanceState);
         InnerFragment innerFragment = new InnerFragment();
         innerFragment.setCallback(this);
@@ -35,9 +37,10 @@ public class OuterFragment extends Fragment implements ButtonCallback {
                 .beginTransaction()
                 .add(R.id.container, innerFragment)
                 .commit();
-        textCounter = view.findViewById(R.id.text_counter);
-        textCounter.setText(String.valueOf(counter));
     }
+    
+            textCounter = view.findViewById(R.id.text_counter);
+        textCounter.setText(String.valueOf(counter));
 
     @Override
     public void hitCounter() {
