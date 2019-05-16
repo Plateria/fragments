@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.hello:
-                intent = new Intent(getApplicationContext(), HelloWorldActivity.class);
+                intent = new Intent(getApplicationContext(),
+                                    HelloWorldActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.single:
